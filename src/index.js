@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import {IntlProvider} from 'react-intl';
-import Wrapper from "./Wrapper";
+import LanguageWrapper from "./components/lang/LanguageWrapper";
 import "./index.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-	<Wrapper>
+	<LanguageWrapper>
 		<App />
-	</Wrapper>,
+	</LanguageWrapper>,
 	document.getElementById("root")
 );

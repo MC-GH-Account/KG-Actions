@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {IntlProvider} from "react-intl";
-import French from "./lang/fr.json";
-import English from "./lang/en.json";
+import French from "./fr.json";
+import English from "./en.json";
 
 export const Context = React.createContext();
 
@@ -17,7 +17,7 @@ if (localeBrowser ==="en") {
     langCode = "fr";
 }
 
-const Wrapper = (props) => {
+const LanguageWrapper = (props) => {
     const [locale, setLocale] = useState(langCode);
     const [messages, setMessages] = useState(langMessages);
     
@@ -39,4 +39,4 @@ const Wrapper = (props) => {
     );
 }
 
-export default Wrapper;
+export default LanguageWrapper;
