@@ -61,7 +61,7 @@ const Navigation = () => {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
-          <Button variant="light" onClick={() => {toggleLanguage()}}>{navbarTranslations.language}</Button>
+          <Button className="justify-content-end" variant="light" onClick={() => {toggleLanguage()}}>{navbarTranslations.language}</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
