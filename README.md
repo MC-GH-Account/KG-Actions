@@ -4,6 +4,12 @@ This project is an initial first working area for the Knowledge Graph Front-End.
 
 This project relies upon [React](https://reactjs.org/) and [NodeJS](https://nodejs.org/en/)
 
+## Build with Docker
+
+To build the project with Docker, use version 18.09 or higher as it uses [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/)
+
+Run `DOCKER_BUILDKIT=1 docker build --file Dockerfile --output build .` to build the project.
+
 ## Setup
 
 Before running the scripts with the project, you must first download the requirements listed in package.json.
